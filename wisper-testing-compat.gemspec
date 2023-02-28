@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["kris.leech@gmail.com", "jamie.schembri@nedap.com"]
 
   spec.summary       = "Helpers for testing Wisper-Compat publisher/subscribers."
-  spec.homepage      = "https://github.com/nedap/wisper-testing"
+  spec.homepage      = "https://github.com/nedap/wisper-testing-compat"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
