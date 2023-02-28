@@ -6,11 +6,11 @@ require 'wisper/testing/version'
 Gem::Specification.new do |spec|
   spec.name          = "wisper-testing"
   spec.version       = Wisper::Testing::VERSION
-  spec.authors       = ["Kris Leech"]
-  spec.email         = ["kris.leech@gmail.com"]
+  spec.authors       = ["Kris Leech", "Jamie Schembri"]
+  spec.email         = ["kris.leech@gmail.com", "jamie.schembri@nedap.com"]
 
-  spec.summary       = "Helpers for testing Wisper publisher/subscribers."
-  spec.homepage      = "https://github.com/krisleech/wisper-testing"
+  spec.summary       = "Helpers for testing Wisper-Compat publisher/subscribers."
+  spec.homepage      = "https://github.com/nedap/wisper-testing"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'wisper'
+  spec.add_dependency 'wisper-compat'
 end
