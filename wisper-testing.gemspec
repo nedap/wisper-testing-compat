@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'wisper/testing/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "wisper-testing"
+  spec.name          = "wisper-testing-compat"
   spec.version       = Wisper::Testing::VERSION
   spec.authors       = ["Kris Leech", "Jamie Schembri"]
   spec.email         = ["kris.leech@gmail.com", "jamie.schembri@nedap.com"]
